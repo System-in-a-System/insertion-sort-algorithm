@@ -1,5 +1,6 @@
 import java.util.Comparator;
 
+
 // Public class to hold insertion sort algorithms for the array of int and the array of strings
 
 // Insertion sort sorts the array in multiple phases, 
@@ -103,6 +104,34 @@ public class InsertionSort {
 		}
 				
 		return safeArrayCopy;
+	}
+	
+	
+	
+	// Program starting point
+	public static void main(String[] args) {
+		
+		
+		// Implement insertion sort on the array of integers
+		int[] originalArray = {7, 10, 9, 4, 1, -20, -7, 6, 15, 17};
+		int[] insertionSortedArray = insertionSort(originalArray);
+		
+		
+		// Print out the original array
+		for (int i = 0; i < originalArray.length; i++)
+			System.out.print(originalArray[i] + " ");
+		 
+		// Break line
+		System.out.println();
+		
+		// Print out the sorted array
+		for (int i = 0; i < insertionSortedArray.length; i++)
+			System.out.print(insertionSortedArray[i] + " ");
+		
+		
+		
+		
+		
 	}
 	
 }
