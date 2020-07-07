@@ -128,9 +128,32 @@ public class InsertionSort {
 		for (int i = 0; i < insertionSortedArray.length; i++)
 			System.out.print(insertionSortedArray[i] + " ");
 		
+		// Break line
+		System.out.println();
 		
 		
 		
+		//-----------------------------------------------------------------------------------------------------------//
+		
+		
+		
+		// Implement insertion sort on the array of strings
+		String [] originalArrayStr = {"bc", "a", "hijkl", "defg", "mnopqrs"};
+		Comparator<String> compareByLength =  (s1, s2) -> s2.length() - s1.length();
+		
+		String[] insertionSortedArrayStr = insertionSort(originalArrayStr, compareByLength);
+		
+		
+		// Print out the original array
+		for (int i = 0; i < originalArrayStr.length; i++)
+			System.out.print(originalArrayStr[i] + " ");
+		 
+		// Break line
+		System.out.println();
+		
+		// Print out the sorted array
+		for (int i = 0; i < insertionSortedArrayStr.length; i++)
+			System.out.print(insertionSortedArrayStr[i] + " ");
 		
 	}
 	
